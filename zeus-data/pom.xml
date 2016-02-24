@@ -11,5 +11,12 @@
 
     <artifactId>zeus-data</artifactId>
 
+    <modules>
+        <module>zeus-data-mybatis</module>
+        <module>zeus-data-core</module>
+        <module>zeus-data-api</module>
+        <module>zeus-model</module>
+    </modules>
 
+    <packaging>pom</packaging>
 </project>
