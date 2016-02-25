@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean id="ssoCookieName" class="java.lang.String">
+        <constructor-arg>
+            <value>${sso.cookie.name}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="ssoCookieKey" class="java.lang.String">
+        <constructor-arg>
+            <value>${sso.auth.key}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="domain" class="java.lang.String">
+        <constructor-arg>
+            <value>${sso.domain}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="returnUrl" class="java.lang.String">
+        <constructor-arg>
+            <value>${logout.url}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="loginAddress" class="java.lang.String">
+        <constructor-arg>
+            <value>${login.address}</value>
+        </constructor-arg>
+    </bean>
+
+</beans>

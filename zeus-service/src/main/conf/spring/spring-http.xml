@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--<bean id="httpClients" class="com.jd.cap.integration.httpclient.HttpClients" scope="singleton"-->
+          <!--destroy-method="close"-->
+          <!--p:connectionRequestTimeout="${http.connectionRequestTimeout}"-->
+          <!--p:connectTimeout="${http.connectionTimeout}"-->
+          <!--p:socketTimeout="${http.socketTimeout}"-->
+          <!--p:maxIdleTime="${http.maxIdleTime}"-->
+          <!--p:idleInterval="${http.idleInterval}"-->
+          <!--p:defaultMaxPerRoute="${http.maxPerRouterConnections}"-->
+          <!--p:maxTotal="${http.maxConnections}"-->
+          <!--p:redirect="${http.redirect}"-->
+          <!--p:retryCount="${http.maxRetrys}">-->
+        <!--<property name="maxPerRoutes">-->
+            <!--<map>-->
+                <!--<entry key="http://opentsdb.jd.local:80" value="${http.opentsdb.connections}"/>-->
+            <!--</map>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--<bean id="httpClient" factory-bean="httpClients" factory-method="create"/>-->
+
+</beans>

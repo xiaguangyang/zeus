@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	       http://www.springframework.org/schema/context
+	       http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--<bean id="dsConfig" class="com.jd.jmq.datasource.DataSourceConfig"-->
+          <!--p:type="HikariCP"-->
+          <!--p:driver="${jdbc.driver}"-->
+          <!--p:url="${jdbc.url}"-->
+          <!--p:user="${jdbc.username}"-->
+          <!--p:password="${jdbc.password}"-->
+          <!--p:maxPoolSize="${jdbc.maxActive}"-->
+          <!--p:minIdle="${jdbc.minIdle}"-->
+          <!--p:connectionTimeout="${jdbc.maxWait}"-->
+          <!--p:validationQuery="${jdbc.validationQuery}"-->
+          <!--p:connectionProperties="${jdbc.connectionProperties}"-->
+          <!--p:transactionIsolation="${jdbc.transactionIsolation}"/>-->
+
+    <!--<bean id="dataSource" class="com.jd.jmq.datasource.DataSourceFactory"-->
+          <!--factory-method="build" destroy-method="destroy"-->
+          <!--c:_0-ref="dsConfig"/>-->
+
+    <!--<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"-->
+          <!--p:dataSource-ref="dataSource"-->
+          <!--p:mapperLocations="classpath*:sqlmap/*.xml"-->
+          <!--p:configLocation="classpath:mybatis-config.xml"/>-->
+
+    <!--<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate"-->
+          <!--c:_0-ref="sqlSessionFactory"/>-->
+
+    <!--<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer"-->
+          <!--p:basePackage="com.jd.cap.data.api.repository"-->
+          <!--p:annotationClass="com.jd.cap.data.api.annotation.Repository"/>-->
+
+    <!--<context:component-scan base-package="com.jd.cap.data.opentsdb.repository"/>-->
+</beans>
